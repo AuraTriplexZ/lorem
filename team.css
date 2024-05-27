@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    background-color: #F8BBD0;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    color: #424242;
+    font-size: 18px;
+}
+
+.custom {
+    color: #E91E63;
+}
+
+.top-bar a {
+    color: #424242;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 7px; */
+    background-color: #FFEBEE;
+    /* box-shadow: 0 2px 4px #BDBDBD;
+    box-shadow: #424242; */
+}
+
+.logo {
+    height: 110px;
+    width: 110px;
+    margin-left: 90px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ec5762;
+    transition: 0.38s;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+nav ul li a.active {
+    color: red;
+}
+
+.contact-button {
+    background-color: #ec5762;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    /* border-radius: 5px; */
+    margin-left: 30px;
+}
+
+.social-icons {
+    height: auto;
+    width: auto;
+    margin-right: 60px;
+    font-size: 24px;
+    padding: 8px;
+
+}
+
+.fa-solid {
+    color: #ec5762;
+}
+
+.fa-brands {
+    color: #ec5762;
+}
+
+.fa-brands:hover {
+    color: #000000;
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.header-content {
+    background-image: url('header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0px;
+    overflow: hidden;
+    color: white;
+    width: 100%;
+}
+
+.header-content h1 {
+    /* font-size: 3em; */
+    margin-top: 4px;
+    text-shadow: 2px 2px 4px #ec5762;
+    color: #ffffff;
+    font-size: 60px;
+}
+
+.header-content p {
+    margin-top: 6px;
+    margin-left: 440px;
+    margin-right: 440px;
+    font-size: 16px;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px #333333;
+    /* Light shadow for better readability */
+    border-color: #333333;
+    font-weight: bold;
+}
+
+.header-content {
+    background-image: url("/japan-cherry-blossom-rbofhm6ztuoe9ti5.jpg");
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    padding: 5% 10%;
+    background-color: rgb(255, 255, 255);
+    gap: 20px;
+}
+
+.team1 {
+    width: calc(25% - 20px);
+    height: 300px;
+    background-color: beige;
+    padding: 10px;
+    position: relative;
+    border-radius: 50px 0px 50px 0px;
+}
+.team2 {
+    width: calc(25% - 20px);
+    height: 300px;
+    background-color: beige;
+    padding: 10px;
+    position: relative;
+    border-radius: 50px 0px 50px 0px;
+}
+.team3 {
+    width: calc(25% - 20px);
+    height: 300px;
+    background-color: beige;
+    padding: 10px;
+    position: relative;
+    border-radius: 50px 0px 50px 0px;
+}
+.team4 {
+    width: calc(25% - 20px);
+    height: 300px;
+    background-color: beige;
+    padding: 10px;
+    position: relative;
+    border-radius: 50px 0px 50px 0px;
+}
+
+.content {
+    display: none;
+}
+
+.team1 {
+    background-image: url(/japanese/manxe2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team2 {
+    background-image: url(/japanese/comedian1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team3 {
+    background-image: url(/japanese/manxe3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team4 {
+    background-image: url(/japanese/manxe1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team1:hover .content, .team2:hover .content, .team3:hover .content, .team4:hover .content {
+    position: absolute;
+    background: linear-gradient(135deg, #A445FF 0%, #00D4FF 100%);
+    color: white;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50px 0px 50px 0px;
+    display: block;
+    transform: scale(1.03);
+    transition: 0.6s;
+    border-style: solid;
+}
+
+
+.team-section {
+    margin-top: 80px;
+}
+
+@media (max-width: 768px){
+    .top-bar {
+        flex-direction: column;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .top-bar {
+        flex-direction: column;
+        font-size: 14px;
+    }
+}
